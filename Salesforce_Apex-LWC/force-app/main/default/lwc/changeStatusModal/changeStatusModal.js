@@ -3,7 +3,7 @@ import { LightningElement, api, track } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent'; // Toast를 띄우기 위한 기능
 import { CloseActionScreenEvent } from 'lightning/actions'; // Modal close를 하기위한 기능
 
-import updateAccountStatus from '@salesforce/apex/ChangeStatusModalController_Sample.updateAccountStatus'; // class와 JS 연결
+import updateAccountStatus from '@salesforce/apex/ChangeStatusModalController.updateAccountStatus'; // class와 JS 연결
 
 export default class ChangeStatusModal_Sample extends LightningElement {
   @api recordId; // 현재 사용자가 사용하는 record의 Id를 가져옴

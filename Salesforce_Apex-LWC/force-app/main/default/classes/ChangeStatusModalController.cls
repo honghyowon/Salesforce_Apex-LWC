@@ -1,4 +1,4 @@
-public with sharing class ChangeStatusModalController_Sample {
+public with sharing class ChangeStatusModalController {
     @AuraEnabled // Aura, LWC의 Javascript 와 Class의 Method를 연결시킬 수 있게 해주는 Annotation
     public static String updateAccountStatus(String recordId){ // return 타입이 String이고 Javascript를 통해 받는 인자가 String recordId가 사용되는 Method
         String result;
