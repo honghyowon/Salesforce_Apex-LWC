@@ -1,0 +1,23 @@
+<template>
+  <template if:true={isLoading}>
+    <lightning-spinner alternative-text="Loading..."></lightning-spinner>
+  </template>
+
+  <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="main-modal">
+    <div class="slds-modal__container slds-is-relative none">
+      <header class="slds-modal__header">
+        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-truncate header-title">고객상태 변경</h2>
+      </header>
+
+      <div class="main-container">
+        <span class="main-content">고객 상태를 변경 하시겠습니까?</span>
+      </div>
+
+      <footer class="slds-modal__footer">
+        <lightning-button label="Close" onclick={handleClickClose} class="slds-button"></lightning-button>
+        <lightning-button label="Confirm" onclick={handleClickConfirm} class="slds-button" variant="brand"></lightning-button>
+      </footer>
+    </div>
+  </section>
+    
+</template>

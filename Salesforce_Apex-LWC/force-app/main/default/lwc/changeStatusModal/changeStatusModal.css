@@ -1,0 +1,21 @@
+.none {
+  width: 100%!important;
+  max-width: none!important;
+  min-width: none!important;
+  padding: 0!important;
+}
+
+.main-container {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title {
+  font-weight: bold;
+}
+
+.main-content {
+  font-size: large;
+}
